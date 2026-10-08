@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Ingreso | Huellitas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head> 
+<body>
+    <header>
+        <h1>🐾 Huellitas </h1>
+    </header>
+    <main class="portada">
+        <section class="caja" id="ingreso">
+            <figure>
+                <img src="img/luna.svg" alt="Luna, una perra marrón esperando un hogar">
+                <p>Te estamos esperando!!</p>
+            </figure>
+            <h2>Ingresar</h2>
+            <form action="usuario.html" method="POST">
+                <p class="campo">
+                    <label for="email">Correo electronico:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+                </p>
+                <p class="campo">
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" name="clave" required>
+                </p>
+                <button type="submit">Ingresar</button>
+            </form>
+        </section>
+        
+        <aside id="modo-demo">
+            <p><span class="destacado">Modo demostracion</span></p>
+            <p>Entrar como: <a href="usuario.html">Usuario</a> |
+               <a href="admin.html">Administrador</a></p>
+            <p>Si todavia no existe ningun Administrador, el sistema exige que se cree el primero. Para eso, hace click en
+               <a href="registro-admin.html">crear el primer Administrador</a>.</p>
+        </aside>
+    </main>
+    <footer>
+        <p><small>&copy; 2026 Huellitas - Adopcion responsable de mascotas. TP de Programacion Web I.</small></p>
+    </footer>
+
+   
+    <button type="button" class="boton-tema">Tema oscuro</button>
+</body>
+</html>
