@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Crear primer Administrador | Huellitas</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/app.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             <h2>Configuracion inicial</h2>
             <p>No encontramos ningun usuario con perfil <span class="destacado">administrador</span>
                Para continuar, crea el primero.</p>
-            <form action="admin.html" method="POST">
+            <form id="form-registro-admin" action="admin.html" method="POST">
                 <p class="campo">
                     <label for="nombre">Nombre y apellido:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -32,6 +33,7 @@
                     <label for="clave2">Repetir contraseña:</label>
                     <input type="password" id="clave2" name="clave2" required>
                 </p>
+                <p id="mensaje-admin" class="mensaje-estado"></p>
                 <div class="botones-form">
                     <button type="submit">Crear Administrador</button>
                     <button type="reset" class="secundario">Limpiar</button>
@@ -44,7 +46,6 @@
          <p><small>&copy; 2026 Huellitas - Adopcion responsable de mascotas. TP de Programacion Web I.</small></p>
     </footer>
 
-    
     <button type="button" class="boton-tema">Tema oscuro</button>
 </body>
 </html>
